@@ -1,16 +1,61 @@
-# React + Vite
+🧠 MaveriX Oracle dApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based decentralized application (dApp) that integrates with Chainlink’s ETH/USD price feed on the Sepolia testnet. Users can view the current ETH price, connect their wallet, and interact with a token smart contract (mint, transfer, burn).
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📈 Fetches ETH/USD price using Chainlink price feed
 
-## React Compiler
+🔗 Uses ethers.js for smart contract interaction
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👛 Wallet connection via MetaMask
 
-## Expanding the ESLint configuration
+🪙 Token functionality: mint, transfer, burn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💾 Transaction history saved locally
+
+🛠 Tech Stack
+
+Frontend: React + Vite
+
+Blockchain: Ethereum (Sepolia)
+
+Smart Contract Interaction: ethers.js
+
+Oracle: Chainlink Price Feeds
+
+📦 Setup & Run Locally
+
+Clone repo
+
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+
+
+Install dependencies
+
+npm install
+
+
+Run dev server
+
+npm run dev
+
+
+Open in browser: http://localhost:5173
+
+📡 Chainlink Price Feed
+
+Uses this contract:
+
+ETH/USD Aggregator
+0x694AA1769357215DE4FAC081bf1f309aDC325306 (Sepolia)
+
+🧪 Contract ABI Used
+[
+  "function latestAnswer() view returns (int256)"
+]
+
+👤 Author
+Michael K.
+el-Mavericko
