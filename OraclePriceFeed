@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract OraclePriceFeed {
+    uint256 public latestPrice;
+    uint256 public lastUpdated;
+    address public owner;
+
+    event PriceUpdated(uint256 price, uint256 timestamp);
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    function updatePrice(uint256 _price) public {
+        require(msg.sender == owner, "Only owner can update");
+        latestPrice = _price;
+        lastUpdated = block.timestamp;
+        emit PriceUpdated(_price, block.timestamp);
+    }
+
+    function getLatestPrice() external view returns (uint256) {
+        return latestPrice;
+    }
+}
