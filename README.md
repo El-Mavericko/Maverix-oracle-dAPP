@@ -1,161 +1,130 @@
-🧠 MaveriX Oracle dApp
+MaveriX Oracle dApp
 
-A professional-grade decentralized application (dApp) built with React, TypeScript, and ethers.js, integrating Chainlink Price Feeds to deliver real-time ETH/USD data on the Sepolia testnet.
+MaveriX Oracle dApp is a Web3 dashboard for token treasury control, on-chain mint/burn management, and ETH price visibility, designed for DAO operators, founders, and treasurers.
 
-Designed with scalability, clean architecture, and modern UI principles, MaveriX demonstrates full-stack Web3 capability — from oracle consumption to token interaction.
+Built on Sepolia, powered by Chainlink price feeds, and secured with owner-only controls.
 
-🚀 Overview
+✨ Features
 
-MaveriX Oracle dApp provides a sleek, responsive interface that allows users to connect their wallet, monitor live ETH prices, and interact directly with an ERC-20 token contract.
+🔐 Owner-Controlled Token Management
 
-This project emphasizes:
+Mint and burn ERC-20 tokens
 
-Production-style frontend architecture
+Owner-only access enforced on-chain and in UI
 
-Type-safe blockchain interaction
+Owner badge displayed when connected
 
-Clean UI/UX design
+💰 Wallet & Balance Dashboard
 
-Modular, scalable code practices
+Connect via MetaMask
 
-✨ Core Features
-📊 Live Oracle Data
+View live token balance
 
-Fetches ETH/USD price in real time using Chainlink
+Multi-token selector (MXT, WETH, WBTC)
 
-Runs on Sepolia testnet
+📈 ETH/USD Price Oracle
 
-Reliable off-chain data delivered on-chain
+Live ETH price (USD)
 
-👛 Wallet Integration
+7-day ETH price chart
 
-Secure MetaMask connection
+Powered by Chainlink & CoinGecko
 
-Automatic wallet detection
+🧾 Transaction History
 
-Real-time account display
+Mint / Burn / Transfer logs
 
-🪙 Token Interaction
+Gas usage tracking
 
-Full ERC-20 style functionality:
+Direct links to Sepolia Etherscan
 
-✅ Mint tokens
+🎨 Neon UI / Cyberpunk Theme
 
-✅ Transfer tokens
+Framer Motion animations
 
-✅ Burn tokens
+TailwindCSS neon styling
 
-✅ View live balances
+Responsive dashboard layout
 
-All transactions are executed directly on-chain via ethers.js.
+🧠 Intended Use Cases
 
-📜 Smart Transaction History
+DAO treasuries
 
-Timestamped activity log
+Token issuers & founders
 
-Gas usage visibility
+Governance-controlled supply management
 
-Direct links to Etherscan
+Internal admin dashboards
 
-Color-coded transaction types (Mint / Transfer / Burn)
+Testnet simulations for token economics
 
-🎨 Modern Professional UI
+🔒 Security Model
 
-Dark, gradient-based layout
+Token contract uses OpenZeppelin Ownable
 
-Glass-style card components
+Only the contract owner can:
 
-Responsive design for multiple screen sizes
+Mint tokens
 
-Clean visual hierarchy
+Burn tokens
 
-🔐 TypeScript-Powered
+UI automatically:
 
-The entire frontend has been upgraded from JavaScript to TypeScript, improving:
+Detects contract owner
 
-Reliability
+Disables mint/burn for non-owners
 
-Maintainability
+Displays owner badge
 
-Developer experience
-
-Long-term scalability
+All critical permissions are enforced on-chain, not just in the UI.
 
 🛠 Tech Stack
 
-Frontend
+Frontend: React + TypeScript
 
-React
+Styling: TailwindCSS
 
-TypeScript
+Animations: Framer Motion
 
-Vite
+Blockchain: Ethereum (Sepolia)
 
-Tailwind CSS
+Web3: Ethers v6
 
-Blockchain
+Oracles: Chainlink ETH/USD
 
-Ethereum (Sepolia Testnet)
+Charts: Chart.js
 
-ethers.js
+Wallet: MetaMask
 
-Oracle
+📦 Smart Contracts
 
-Chainlink Price Feeds
+MaveriX (MX / MXT)
 
-📡 Chainlink Integration
+ERC-20
 
-ETH/USD Aggregator (Sepolia):
+Owner-controlled mint & burn
 
-0x694AA1769357215DE4FAC081bf1f309aDC325306
+18 decimals
 
+Deployed on Sepolia
 
-ABI Used:
-
-function latestAnswer() view returns (int256)
-
-📦 Setup & Run Locally
-1️⃣ Clone the repository
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
-
-2️⃣ Install dependencies
+🚀 Getting Started
+git clone https://github.com/your-username/maverix-oracle-dapp.git
+cd maverix-oracle-dapp
 npm install
-
-3️⃣ Start the development server
 npm run dev
 
 
-Open:
+Make sure MetaMask is connected to Sepolia.
 
-http://localhost:5173
+⚠️ Notes
 
-🧠 Architecture Philosophy
+Token price (USD) is optional and depends on CoinGecko availability
 
-MaveriX was built with a forward-looking mindset:
+ETH price uses public oracle feeds
 
-Clean code. Strong typing. Scalable structure. Professional UX.
+This project is currently optimized for testnet usage
 
-This is not just a demo — it is a foundation capable of evolving into a production-ready Web3 application.
+📜 License
 
-🔮 Future Enhancements
-
-Component-based architecture
-
-Toast notifications & loading states
-
-Smart contract event listeners
-
-Multi-network support
-
-Admin-controlled oracle dashboard
-
-Deployment to Vercel
-
-Advanced analytics
-
-👤 Author
-
-Michael K. el-Mavericko
-
-Web3 builder focused on infrastructure, intelligent systems, and high-performance decentralized applications.
+MIT
